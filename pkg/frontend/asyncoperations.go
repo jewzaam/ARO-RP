@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/gorilla/mux"
 
 	"github.com/Azure/ARO-RP/pkg/api"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 )
 
 func (f *frontend) newAsyncOperation(ctx context.Context, r *http.Request, doc *api.OpenShiftClusterDocument) (string, error) {

@@ -11,7 +11,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 
@@ -20,6 +19,7 @@ import (
 	"github.com/Azure/ARO-RP/pkg/env"
 	utillog "github.com/Azure/ARO-RP/pkg/util/log"
 	"github.com/Azure/ARO-RP/pkg/util/log/audit"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 )
 
 type logResponseWriter struct {

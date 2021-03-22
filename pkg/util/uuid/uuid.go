@@ -1,7 +1,7 @@
 package uuid
 
 import (
-	"github.com/gofrs/uuid"
+	uuid "github.com/gofrs/uuid"
 )
 
 // This is a facade to aid in conversion from github.com/satori/go.uuid to github.com/gofrs/uuid

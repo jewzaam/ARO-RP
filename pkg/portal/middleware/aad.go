@@ -16,7 +16,6 @@ import (
 
 	"github.com/Azure/go-autorest/autorest/adal"
 	"github.com/coreos/go-oidc"
-	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
 	"github.com/sirupsen/logrus"
@@ -26,6 +25,7 @@ import (
 	"github.com/Azure/ARO-RP/pkg/env"
 	"github.com/Azure/ARO-RP/pkg/util/deployment"
 	"github.com/Azure/ARO-RP/pkg/util/roundtripper"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 )
 
 const (

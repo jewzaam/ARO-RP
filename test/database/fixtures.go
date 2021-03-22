@@ -6,10 +6,9 @@ package database
 import (
 	"context"
 
-	"github.com/Azure/ARO-RP/pkg/util/uuid"
-
 	"github.com/Azure/ARO-RP/pkg/api"
 	"github.com/Azure/ARO-RP/pkg/database"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 )
 
 type Fixture struct {

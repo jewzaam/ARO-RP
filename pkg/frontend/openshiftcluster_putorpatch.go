@@ -13,7 +13,6 @@ import (
 	"time"
 
 	"github.com/Azure/go-autorest/autorest/azure"
-	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 
@@ -21,6 +20,7 @@ import (
 	"github.com/Azure/ARO-RP/pkg/api/admin"
 	"github.com/Azure/ARO-RP/pkg/database/cosmosdb"
 	"github.com/Azure/ARO-RP/pkg/frontend/middleware"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/Azure/ARO-RP/pkg/util/version"
 )
 
