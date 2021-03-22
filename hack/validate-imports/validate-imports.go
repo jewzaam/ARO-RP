@@ -224,7 +224,7 @@ nextImport:
 		case "sigs.k8s.io/yaml", "gopkg.in/yaml.v2":
 			errs = append(errs, fmt.Errorf("%s is imported; use github.com/ghodss/yaml", value))
 			continue nextImport
-		case "github.com/google/uuid":
+		case "github.com/google/uuid", "github.com/satori/go.uuid":
 			errs = append(errs, fmt.Errorf("%s is imported; use github.com/gofrs/uuid", value))
 			continue nextImport
 		}
