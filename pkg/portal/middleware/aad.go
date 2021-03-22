@@ -16,9 +16,9 @@ import (
 
 	"github.com/Azure/go-autorest/autorest/adal"
 	"github.com/coreos/go-oidc"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
-	uuid "github.com/satori/go.uuid"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/microsoft"

@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/gorilla/mux"
-	uuid "github.com/satori/go.uuid"
 	"github.com/sirupsen/logrus"
 	cryptossh "golang.org/x/crypto/ssh"
 

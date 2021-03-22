@@ -19,10 +19,10 @@ import (
 
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/form3tech-oss/jwt-go"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"github.com/golang/mock/gomock"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/securecookie"
-	uuid "github.com/satori/go.uuid"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
 
@@ -444,7 +444,8 @@ func TestCallback(t *testing.T) {
 		{
 			name: "success",
 			request: func(a *aad) (*http.Request, error) {
-				uuid := uuid.NewV4().String()
+				u, _ := uuid.NewV4()
+				uuid := u.String()
 
 				cookie, err := securecookie.EncodeMulti(SessionName, map[interface{}]interface{}{
 					sessionKeyState:        uuid,

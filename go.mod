@@ -5,7 +5,7 @@ go 1.14
 require (
 	cloud.google.com/go v0.77.0 // indirect
 	github.com/AlekSi/gocov-xml v0.0.0-20190121064608-3a14fb1c4737
-	github.com/Azure/azure-sdk-for-go v51.2.0+incompatible
+	github.com/Azure/azure-sdk-for-go v52.5.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.18
 	github.com/Azure/go-autorest/autorest/adal v0.9.13
 	github.com/Azure/go-autorest/autorest/azure/auth v0.5.7
@@ -37,6 +37,7 @@ require (
 	github.com/go-openapi/spec v0.20.3 // indirect
 	github.com/go-playground/validator/v10 v10.4.1 // indirect
 	github.com/go-test/deep v1.0.7
+	github.com/gofrs/uuid v3.3.0+incompatible
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/mock v1.4.4
 	github.com/golangci/golangci-lint v1.32.2
@@ -79,7 +80,6 @@ require (
 	github.com/prometheus/common v0.15.0
 	github.com/prometheus/procfs v0.6.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
-	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.7.1
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635 // indirect
 	github.com/ugorji/go/codec v1.2.5-0.20210226122216-b5e6aedbb7b6
@@ -117,8 +117,8 @@ require (
 exclude (
 	// exclude github.com/hashicorp/vault < v1.5.1: https://nvd.nist.gov/vuln/detail/CVE-2020-16251
 	github.com/hashicorp/vault v0.10.4
-	github.com/hashicorp/vault v0.11.0-beta1
 	github.com/hashicorp/vault v0.11.0
+	github.com/hashicorp/vault v0.11.0-beta1
 	github.com/hashicorp/vault v0.11.1
 	github.com/hashicorp/vault v0.11.2
 	github.com/hashicorp/vault v0.11.3
@@ -127,25 +127,25 @@ exclude (
 	github.com/hashicorp/vault v0.11.6
 	github.com/hashicorp/vault v0.11.7
 	github.com/hashicorp/vault v0.11.8
+	github.com/hashicorp/vault v1.0.0
 	github.com/hashicorp/vault v1.0.0-beta1
 	github.com/hashicorp/vault v1.0.0-beta2
 	github.com/hashicorp/vault v1.0.0-rc1
-	github.com/hashicorp/vault v1.0.0
 	github.com/hashicorp/vault v1.0.1
 	github.com/hashicorp/vault v1.0.2
 	github.com/hashicorp/vault v1.0.3
+	github.com/hashicorp/vault v1.1.0
 	github.com/hashicorp/vault v1.1.0-beta1
 	github.com/hashicorp/vault v1.1.0-beta2
-	github.com/hashicorp/vault v1.1.0
 	github.com/hashicorp/vault v1.1.1
 	github.com/hashicorp/vault v1.1.2
 	github.com/hashicorp/vault v1.1.3
 	github.com/hashicorp/vault v1.1.4
 	github.com/hashicorp/vault v1.1.5
+	github.com/hashicorp/vault v1.2.0
 	github.com/hashicorp/vault v1.2.0-beta1
 	github.com/hashicorp/vault v1.2.0-beta2
 	github.com/hashicorp/vault v1.2.0-rc1
-	github.com/hashicorp/vault v1.2.0
 	github.com/hashicorp/vault v1.2.1
 	github.com/hashicorp/vault v1.2.2
 	github.com/hashicorp/vault v1.2.3
@@ -158,18 +158,18 @@ exclude (
 	github.com/hashicorp/vault v1.3.5
 	github.com/hashicorp/vault v1.3.6
 	github.com/hashicorp/vault v1.3.7
+	github.com/hashicorp/vault v1.4.0
 	github.com/hashicorp/vault v1.4.0-beta1
 	github.com/hashicorp/vault v1.4.0-beta2
 	github.com/hashicorp/vault v1.4.0-beta3
 	github.com/hashicorp/vault v1.4.0-rc1
-	github.com/hashicorp/vault v1.4.0
 	github.com/hashicorp/vault v1.4.1
 	github.com/hashicorp/vault v1.4.2
 	github.com/hashicorp/vault v1.4.3
+	github.com/hashicorp/vault v1.5.0
 	github.com/hashicorp/vault v1.5.0-beta1
 	github.com/hashicorp/vault v1.5.0-beta2
 	github.com/hashicorp/vault v1.5.0-rc1
-	github.com/hashicorp/vault v1.5.0
 )
 
 replace (

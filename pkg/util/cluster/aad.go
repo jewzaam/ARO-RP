@@ -12,7 +12,7 @@ import (
 	azgraphrbac "github.com/Azure/azure-sdk-for-go/services/graphrbac/1.6/graphrbac"
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/date"
-	uuid "github.com/satori/go.uuid"
+	"github.com/Azure/ARO-RP/pkg/util/uuid"
 	"k8s.io/apimachinery/pkg/util/wait"
 )
 
