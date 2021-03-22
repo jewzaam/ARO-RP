@@ -1,7 +1,7 @@
 package uuid
 
 import (
-	uuid "github.com/gofrs/uuid"
+	"github.com/gofrs/uuid"
 )
 
 // This is a facade to aid in conversion from github.com/satori/go.uuid to github.com/gofrs/uuid
@@ -9,7 +9,10 @@ import (
 
 // helper so we can in-line uuid generation with gofrs, drops the error that would be returned
 func NewV4() uuid.UUID {
-	u, _ := uuid.NewV4()
+	u, err := uuid.NewV4()
+	if err != nil {
+		panic(err)
+	}
 	return u
 }
 

@@ -19,7 +19,7 @@ import (
 
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/form3tech-oss/jwt-go"
-	uuid "github.com/gofrs/uuid"
+	"github.com/gofrs/uuid"
 	"github.com/golang/mock/gomock"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/securecookie"
