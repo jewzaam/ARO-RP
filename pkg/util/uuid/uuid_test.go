@@ -1,5 +1,8 @@
 package uuid
 
+// Copyright (c) Microsoft Corporation.
+// Licensed under the Apache License 2.0.
+
 import (
 	"testing"
 )
@@ -11,9 +14,6 @@ func TestNewV4(t *testing.T) {
 		}
 	}()
 
-	u := NewV4()
-
-	if &u == nil {
-		t.Error("NewV4() returned nil")
-	}
+	// if this fails we get a panic, handled in the recover above
+	NewV4()
 }
