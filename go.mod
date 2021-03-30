@@ -170,6 +170,9 @@ exclude (
 	github.com/hashicorp/vault v1.5.0-beta1
 	github.com/hashicorp/vault v1.5.0-beta2
 	github.com/hashicorp/vault v1.5.0-rc1
+	// https://www.whitesourcesoftware.com/vulnerability-database/WS-2018-0594
+	github.com/satori/go.uuid v0.0.0
+	github.com/satori/uuid v0.0.0
 )
 
 replace (
@@ -222,4 +225,7 @@ replace (
 	sigs.k8s.io/cluster-api-provider-openstack => github.com/openshift/cluster-api-provider-openstack v0.0.0-20201002114634-3622a0ce6b56
 	sigs.k8s.io/controller-runtime => sigs.k8s.io/controller-runtime v0.6.4
 	sigs.k8s.io/controller-tools => sigs.k8s.io/controller-tools v0.3.0
+	// https://www.whitesourcesoftware.com/vulnerability-database/WS-2018-0594
+	github.com/satori/go.uuid => github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b
+	github.com/satori/uuid => github.com/satori/uuid v1.2.1-0.20181028125025-b2ce2384e17b
 )
